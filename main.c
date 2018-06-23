@@ -179,7 +179,7 @@ int main()
             animate_program_entry(program_entry_list, screen, background, current_program, "", ANIMATE_MOVE_OUT);
             interface_mode = MODE_DEFAULT;
             
-            system("umount /usb");
+            /* system("umount /usb"); */
             
             free_entry_list(program_entry_list);
             program_max = 0;
@@ -353,7 +353,7 @@ int main()
             animate_program_entry(program_entry_list, screen, background, current_program, "", ANIMATE_MOVE_OUT);
             interface_mode = MODE_PACKAGE_MANAGER;
             
-            system("mount /dev/sdb1 /usb");
+            /* system("mount /dev/sdb1 /usb"); */
             
             free_entry_list(program_entry_list);
             program_max = 0;
@@ -434,7 +434,7 @@ int main()
           {
             animate_program_entry(program_entry_list, screen, background, current_program, "", ANIMATE_MOVE_OUT_FADE);
             sprintf(cache_path, "cd \"%s/%s\" && xinit \"%s/%s/%s\" -- :1", program_path, cache_program_entry->name, program_path, cache_program_entry->name, cache_program_entry->name);
-            system(cache_path);
+            /* system(cache_path); */
           }
           
           break;
