@@ -19,6 +19,7 @@ run: $(P_NAME)/$(P_NAME)
 
 $(P_NAME):
 	mkdir $(P_NAME)
+	cp -n themes/Simple/* $(P_NAME)
 
 obj:
 	mkdir obj

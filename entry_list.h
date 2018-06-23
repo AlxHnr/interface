@@ -26,10 +26,10 @@
 
 #define name_max 128
 #define cache_buffer_max 1024
-#define interface_path "/interface"
-#define program_path "/programs"
-#define package_path "/usb/pkg"
-#define theme_path "/themes"
+#define interface_path "."
+#define program_path "../programs"
+#define package_path "../usb/pkg"
+#define theme_path "../themes"
 
 #define max_displayable_programs (short)((screen->h - big_size)/small_size + 2)
 
