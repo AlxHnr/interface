@@ -63,7 +63,7 @@ int main()
   if(SDL_Init(SDL_INIT_EVERYTHING) < 0)
     exit(EXIT_FAILURE);
   
-  if((screen = SDL_SetVideoMode(800, 600, 32, SDL_HWSURFACE | SDL_FULLSCREEN)) == NULL)
+  if((screen = SDL_SetVideoMode(800, 600, 32, SDL_HWSURFACE)) == NULL)
     exit(EXIT_FAILURE);
   
   atexit(SDL_Quit);
