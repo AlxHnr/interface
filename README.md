@@ -2,7 +2,7 @@
 
 A launcher for a video game console I tried to build out of an old pc. It
 would boot straight into this interface, allowing games to be launched,
-installed and uninstalled. This interface doesn't wrap any exiting package
+installed and uninstalled. This interface doesn't wrap any existing package
 managers. Instead, it mounts a USB thumb drive by spawning shell commands.
 The thumb drive can contain arbitrary setup scripts, which will be listed
 as installable packages. It will not reboot or shutdown your machine
