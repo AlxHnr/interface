@@ -6,7 +6,7 @@ OBJECTS = obj/main.o obj/entry_list.o obj/font.o
 
 #main game
 $(P_NAME)/$(P_NAME): obj $(OBJECTS) $(P_NAME)
-	$(CC) $(CFLAGS) $(LDFLAGS) $(OBJECTS) -o $(P_NAME)/$(P_NAME)
+	$(CC) $(CFLAGS) $(OBJECTS) $(LDFLAGS) -o $(P_NAME)/$(P_NAME)
 
 #objects
 obj/%.o: %.c
